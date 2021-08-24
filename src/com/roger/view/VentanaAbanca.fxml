@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="tituloVentana" alignment="CENTER" layoutX="277.0" layoutY="26.0" text="Prototipo Ventana Abanca" textFill="#2661f6" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="SansSerif Bold" size="28.0" />
+         </font>
+      </Label>
+      <Pane fx:id="seleccionFichero" layoutX="52.0" layoutY="75.0" prefHeight="199.0" prefWidth="487.0" style="-fx-border-color: #2661F6; -fx-border-width: 2; -fx-border-radius: 20; -fx-border-style: dashed; -fx-opacity: 0.5;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <Label fx:id="txtArrastreFich" layoutX="171.0" layoutY="24.0" text="Arrastrar fichero aquí" textFill="#2661f6">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSeleccionFichero" layoutX="178.0" layoutY="124.0" mnemonicParsing="false" onAction="#seleccionarFichero" stylesheets="@../res/css/abanca.css" text="SELECCIONAR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="textArrSecundario" layoutX="237.0" layoutY="77.0" text="o bien" textFill="#2661f6">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ComboBox layoutX="150.0" layoutY="329.0" prefHeight="40.0" prefWidth="540.0" style="-fx-background-color: #fffff; -fx-: ;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+      <Label fx:id="ficheroSeleccionado" layoutX="56.0" layoutY="290.0" textFill="#2661f6">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="264.0" layoutY="398.0" mnemonicParsing="false" stylesheets="@../res/css/abanca.css" text="CONFIRMAR " AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+   </children>
+</AnchorPane>

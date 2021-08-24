@@ -1,0 +1,15 @@
+Button { -fx-background-color: #2661F6;
+         -fx-border-width: 2;
+         -fx-padding: 15px;
+         -fx-text-fill: #FFFFFF;
+         -fx-font-family: "SansSerif";
+         -fx-font-style: Bold;
+         -fx-font-size: 20px;
+         -fx-background-radius: 40px;
+}
+
+
+Button:hover {
+        -fx-background-color: #FFFFFF;
+        -fx-text-fill: #2661F6;
+}
